@@ -1,5 +1,4 @@
-# java-server
-REST API Server in Java to be used for Docker Testing
+# githubactions-clouddeployment-java
 
 This application utilzies Github Actions, Docker and DigitialOcean to automatically deploy a Java Server application into a Docker container on a Digital Ocean server.
 

@@ -12,7 +12,7 @@ public class RESTServer extends RouteBuilder {
 
         //Configure the REST server. Utilizing spark-rest as server component due to ease of use
         //with straightforward REST API
-        restConfiguration().component("spark-rest").port(8081);
+        restConfiguration().component("spark-rest").port(80);
 
         rest().get("playerscore/{playerID}")
                 //Declares that this endpoint from here on is treated as a route vs REST endpoint

@@ -23,5 +23,5 @@ jobs:
         PORT: ${{ secrets.PORT }}
         PASSWORD: ${{ secrets.PASSWORD }}
       with:
-        source: "./target/restapi-0.0.1-SNAPSHOT.jar"
-        target: "/usr/test/"
+        source: "./Dockerfile, ./target/restapi-0.0.1-SNAPSHOT.jar"
+        target: "/usr/sideproject/"

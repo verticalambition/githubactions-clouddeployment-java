@@ -1,6 +1,6 @@
 # githubactions-clouddeployment-java
 
-This application utilzies Github Actions, Docker and DigitialOcean to automatically deploy a Java Server application into a Docker container on a Digital Ocean server.
+This application utilzies Github Actions, Docker and DigitialOcean to automatically deploy a Java Server application into a Docker container on a Digital Ocean server upon update of code in Master branch.
 
 Configuration: Details are maintained withing Github Secrets to provide key, host and username credentials to github actions needing to SSH with DigitalOcean server
 

@@ -21,6 +21,7 @@ public class RESTServer extends RouteBuilder {
                 .setBody(simple("You requested information on ${header.playerID}"))
                 .log(LoggingLevel.INFO,"The user requested to know the score for user ${header.playerID}");
 
+        //POST To place new score
         rest().post("/submitnewscore")
                 //Declares that this endpoint from here on is treated as a route vs REST endpoint
                 .route()

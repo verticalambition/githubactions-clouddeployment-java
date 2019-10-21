@@ -2,7 +2,7 @@
 
 This application utilzies Github Actions, Docker and DigitialOcean to automatically deploy a Java Server application into a Docker container on a Digital Ocean server upon update of code in Master branch.
 
-Configuration: Details are maintained withing Github Secrets to provide key, host and username credentials to github actions needing to SSH with DigitalOcean server
+Configuration: Details are maintained within Github Secrets to provide key, host and username credentials to github actions needing to SSH with DigitalOcean server
 
 Steps:
 1. When source code is pushed to master, Github Actions kicks off a Maven package command to trigger a JAR file to be created. 

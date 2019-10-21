@@ -33,6 +33,6 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          cp /usr/sideproject/target/rest*.jar .
+          cp /usr/sideproject/target/rest*.jar /usr/sideproject/
           docker build -t restserver .
           docker run -p 80:8081 restserver

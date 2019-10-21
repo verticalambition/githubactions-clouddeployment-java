@@ -9,3 +9,5 @@ Steps:
 2. Upon successful testing and creation of JAR, Github Actions utilizes the action, appleboy/scp-action, to copy created JAR and Dockerfile to DigitalOcean server via SSH with private key.
 3. Upon completion of copy, another action, appleboy/ssh-action, is utilized to issue shell commands inside the digital ocean server. These commands create a new docker build with the new instance of the JAR and then upon successful build, run the container with port exposed for 
 incoming requests to be recieved by Java API Server.
+
+Long story short, with a commit to master branch, you have a running Docker container on DigitalOcean to test your code on.
